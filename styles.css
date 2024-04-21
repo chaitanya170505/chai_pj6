@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  
+}
+
+body{
+    background-color: #9effa9;
+    background-size: cover;
+}
+
+h1{
+  text-align: center;
+  color: rgb(4, 99, 10);
+}
+
+.container{
+  position: relative;
+  margin-top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 40vh;
+  background-color: white;
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+
+.score{
+  display: flex;
+  justify-content: space-around;
+}
+
+.computer{
+  color: blue;
+}
+
+.player{
+  color:  orangered;
+}
+
+.hand1{
+  width: 170px;
+  height: 170px;
+}
+.hand2{
+  width: 170px;
+  height: 170px;
+}
+
+@media screen and (min-width: 750px) {
+  .container{
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 735px) {
+  .container{
+    margin-top: 200px;
+  }
+}
+
+.options{
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.rock img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.paper img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.scissor img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.button-click-animation {
+  animation: button-click 0.3s ease;
+}
+
+@keyframes button-click {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.hand-movement-animation {
+  animation: handshake 300ms linear infinite;
+}
+
+@keyframes handshake {
+  0%, 100% {
+    transform: translateY(0); 
+  }
+  25%, 75% {
+    transform: translateY(-40px); 
+  }
+  50% {
+    transform: translateY(40px); 
+  }
+}
+
+
+
+.revert{
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  display: flex;
+  justify-content: space-around;
+}
+
+#reset{
+  padding: 5px;
+  font-size: 30px;
+  background-color: rgb(9, 9, 9);
+  color: aquamarine;
+  border-radius: 10px;
+}
+
+#restart{
+  padding: 5px;
+  font-size: 30px;
+  background-color: rgb(9, 9, 9);
+  color: aquamarine;
+  border-radius: 10px;
+}

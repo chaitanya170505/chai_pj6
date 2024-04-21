@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="shortcut icon" href="./Assets/icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1 id="heading">Welcome to the Rock-Paper-Scissors Game</h1>
+    <div class="score">
+        <h2 class="computer">Computer : <span id="Cwon">0</span></h2>
+        <h2 class="player">Player : <span id="Pwon">0</span></h2>
+    </div>
+    <div class="container">
+    <img src="./Assets/hand1.png" alt="" class="hand1" id="hand1">
+    <img src="./Assets/hand2.png" alt="" class="hand2" id="hand2">
+    </div>
+
+    <div class="options">
+         <div class="rock button" id="rock" data-number="1"><img src="./Assets/Rock.png" alt=""></div>
+         <div class="paper button" id="paper" data-number="2"><img src="./Assets/Paper.png" alt=""></div>
+         <div class="scissor button" id="scissor" data-number="3"><img src="./Assets/Scissor.png" alt=""></div>
+    </div>
+
+    <div class="revert">
+         <button id="reset">Reset</button>
+         <button id="restart">Restart</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
