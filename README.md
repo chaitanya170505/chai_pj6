@@ -1,1 +1,1 @@
-# chai_pj6
+rock-paper-scissor game using html, css, js
